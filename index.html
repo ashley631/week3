@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Seating Chart</title>
-    <link rel=stylesheet href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Table Reservation</title>
+  
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>Table Finder</h1>
-    <p>Pick your table now</p>
-    
-    
+  
+  <h1>Table Finder</h1>
+  <p>Pick your table now</p>
 
-    <section class="container">
-        <section class="cell"></section>
-        <section class="cell"></section>
-        <section class="cell"></section>
-        <section class="cell"></section>
-        <section class="cell"></section>
-        <section class="cell"></section>
-        <section class="cell"></section>
-        <section class="cell"></section>
-        <section class="cell"></section>
-       
+  <section class="container">
+    <section class="table reserved">
+      <p class="table-num">1</p>
+    </section>
+    <section class="table available">
+      <p class="table-num">2</p>
+    </section>
+    <section class="table available">
+      <p class="table-num">3</p>
+    </section>
+    <section class="table available">
+      <p class="table-num">4</p>
+    </section>
+    <section class="table available">
+      <p class="table-num">5</p>
+    </section>
+    <section class="table available">
+      <p class="table-num">6</p>
+    </section>
+    <section class="table available">
+      <p class="table-num">7</p>
+    </section>
+    <section class="table available">
+      <p class="table-num">8</p>
+    </section>
+    <section class="table available">
+      <p class="table-num">9</p>
     </section>
 
-    
-
-
-
-
-
-    <form>
-        <h1>New Reservation</h1>
-        <p>Table Number: </p>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Phone Number">
-        <input type="text" placeholder="Name Of Party">
-        <button>Save</button>
+    <form class="reserve-form">
+      <p class="form-x">X</p>
+      <h6 class="form-title">New Reservation</h6>
+      <p class="form-table-num"></p>
+      <input type="text" placeholder="Name:">
+      <input type="text" placeholder="Phone:">
+      <input type="text" placeholder="Party Size:">
+      <button type="button" class="form-save">Save</button>
     </form>
 
-    <script src="script.js"></script>
+  </section>
 
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
-</html>
